@@ -41,7 +41,7 @@ class _SicState extends State<Sic> {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Simple Interest Calculator"),
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.lightGreen[700],
           centerTitle: true,
         ),
         body: Form(
@@ -144,6 +144,9 @@ class _SicState extends State<Sic> {
                         children: [
                           Expanded(
                               child: ElevatedButton(
+                                style: const ButtonStyle(
+                                  backgroundColor: MaterialStatePropertyAll(Colors.lightGreen)
+                                ),
                                 child: const Text("Calculate"),
                                 onPressed: () {
                                   setState(() {
@@ -156,6 +159,9 @@ class _SicState extends State<Sic> {
                           Container(width: 4.0),
                           Expanded(
                               child: ElevatedButton(
+                                style: const ButtonStyle(
+                                  backgroundColor: MaterialStatePropertyAll(Colors.lightGreen)
+                                ),
                                 child: const Text("Reset"),
                                 onPressed: () {
                                   setState(() {
